@@ -1,0 +1,8 @@
+tasks:
+  - name: build
+    description: build the demo binary
+    env:
+      - GOOS: linux
+        GOARCH: amd64
+    actions:
+      - go build -o bin/demo demo.go
